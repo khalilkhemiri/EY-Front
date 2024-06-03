@@ -1,6 +1,13 @@
 export class Mission {
-    id!: number;
+    id!:number;
     nom!: string;
-    // Autres propriétés si nécessaire
+    dateFin!:Date;
+    dateDebut!:Date;
+
+  }
+  export class CreateMission {
+    nom!: string;
+    dateDebut!: Date;
+    dateFin!: Date;
   }
   

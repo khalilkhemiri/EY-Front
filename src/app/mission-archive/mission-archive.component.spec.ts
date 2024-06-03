@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MissionsServiceComponent } from './missions-service.component';
+import { MissionArchiveComponent } from './mission-archive.component';
 
-describe('MissionsServiceComponent', () => {
-  let component: MissionsServiceComponent;
-  let fixture: ComponentFixture<MissionsServiceComponent>;
+describe('MissionArchiveComponent', () => {
+  let component: MissionArchiveComponent;
+  let fixture: ComponentFixture<MissionArchiveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MissionsServiceComponent]
+      declarations: [MissionArchiveComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MissionsServiceComponent);
+    fixture = TestBed.createComponent(MissionArchiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

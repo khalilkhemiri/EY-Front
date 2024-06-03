@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Mission } from '../Model/missions'; // Assurez-vous que le chemin est correct
+import { CreateMission, Mission } from '../Model/missions';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MissionsService {
 
-  private baseUrl = 'http://localhost:8083/Mission'; // URL de base de ton API
+  private baseUrl = 'http://localhost:8083/Mission'; 
 
   constructor(private http: HttpClient) { }
 
@@ -20,8 +20,8 @@ export class MissionsService {
     return this.http.get<Mission>(`${this.baseUrl}/${id}`);
   }
 
-  createMission(mission: Mission): Observable<Mission> {
-    return this.http.post<Mission>(this.baseUrl, mission);
+  createMission(mission: CreateMission): Observable<CreateMission> {
+    return this.http.post<CreateMission>(`${this.baseUrl}/add`, mission);
   }
 
   deleteMission(id: number): Observable<any> {

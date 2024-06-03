@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { LoginComponent } from './login/login.component';
-import { MissionsServiceComponent } from './missions-service/missions-service.component'; // Importez le composant MissionsServiceComponent
+import { MissionArchiveComponent } from './mission-archive/mission-archive.component';
+import { AxesComponent } from './axes/axes.component';
+import { QuestionComponent } from './question/question.component';
+import { CriteriaComponent } from './criteria/criteria.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
   { path: 'acceuil', component: AcceuilComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'missions-service', component: MissionsServiceComponent } // Ajoutez une route pour MissionsServiceComponent
+  { path: 'archive', component:  MissionArchiveComponent},
+  { path: 'Axes', component: AxesComponent } ,
+  { path: 'question', component: QuestionComponent } ,
+  { path: 'criteria', component: CriteriaComponent } 
+
 ];
 
 @NgModule({

@@ -21,8 +21,7 @@ export class LoginComponent implements OnInit {
         const userId = user.id;
         console.log("User ID:", userId);
          this.authService.setUserId(userId);
-        // Vous pouvez maintenant utiliser userId comme nécessaire dans votre application
-        // Redirection vers la page '/employees' par exemple
+        
         this.router.navigateByUrl('/acceuil');
       },
       () => {

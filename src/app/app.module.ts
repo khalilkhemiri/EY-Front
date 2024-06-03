@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { LoginComponent } from './login/login.component';
@@ -16,19 +15,25 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MissionsService } from './service/missions.service';
-import { MissionsServiceComponent } from './missions-service/missions-service.component';
 import { FormGroup } from '@angular/forms';
-
+import { MissionArchiveComponent } from './mission-archive/mission-archive.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { AxesComponent } from './axes/axes.component';
+import { QuestionComponent } from './question/question.component';
+import { SurveyModule } from "survey-angular-ui";
+import { CriteriaComponent } from './criteria/criteria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AcceuilComponent,
     LoginComponent,
     NavbarComponent,
-    MissionsServiceComponent
-
+    MissionArchiveComponent,
+    AxesComponent,
+    QuestionComponent,
+    CriteriaComponent,
+    
     
   ],
   imports: [
@@ -42,8 +47,9 @@ import { FormGroup } from '@angular/forms';
     MatIconModule,
     HttpClientModule,
     MatGridListModule,
-    MatToolbarModule
-   
+    MatToolbarModule,
+    MatPaginatorModule,
+    SurveyModule
 
   ],
   providers: [ MissionsService ],
