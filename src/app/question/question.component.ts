@@ -8,7 +8,7 @@ import { QuestionService } from '../service/question.service';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
-  title = 'My First Survey';
+  title = 'Questionnaire';
   surveyModel!: Model;
 
   constructor(private questionService: QuestionService) {}

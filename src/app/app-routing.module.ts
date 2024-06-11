@@ -6,6 +6,7 @@ import { MissionArchiveComponent } from './mission-archive/mission-archive.compo
 import { AxesComponent } from './axes/axes.component';
 import { QuestionComponent } from './question/question.component';
 import { CriteriaComponent } from './criteria/criteria.component';
+import { SurveyPdfComponent } from './pdf/pdf.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'archive', component:  MissionArchiveComponent},
   { path: 'Axes', component: AxesComponent } ,
   { path: 'question', component: QuestionComponent } ,
-  { path: 'criteria', component: CriteriaComponent } 
+  { path: 'criteria', component: CriteriaComponent } ,
+  { path: 'eval', component: SurveyPdfComponent } 
 
 ];
 

@@ -13,3 +13,59 @@
     font-size: 18px;
     color: #aaa; /* Couleur de l'icône */
   }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: 480px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.input-group-text {
+    background-color: white;
+    border-right: 0;
+}
+
+.input-group .form-control {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: underline;
+    color: #01644d;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: right;
+}
+
+.btn-primary {
+    background-color: #c5d147;
+    border-color: #c5d147;
+}

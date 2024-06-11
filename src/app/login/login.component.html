@@ -14,44 +14,41 @@
         crossorigin="anonymous">
 </head>
 
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;background-color: #c5d147;">
+<body class="bg-gray" style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0;">
 
-    <div class="container" style=" height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <div class="card col-md-6" style="background-color: white; padding: 20px; border-radius: 10px; height: 480px;">
-            <!-- Reste de votre formulaire de connexion -->
+    <div class="container" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="card col-md-6" style="background-color: white; padding: 20px; border-radius: 10px; height: 480px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <img src="assets/images/eyyy.png" alt="Logo" style="width: 190px; height: 100px; margin-bottom: 20px;">
                 
-                <form  (ngSubmit)="userlogin()"  style="margin-top: 20px;">
+                <form (ngSubmit)="userlogin()" style="margin-top: 20px;">
                     <div class="mb-3">
-                        <label for="userId" class="form-label" style="font-weight: bold;">Identifiant</label>
+                        <label for="userId" class="form-label" style="font-weight: bold;">Email</label>
                         <div class="input-group">
                             <div class="input-group-text">
-                                <mat-icon>account_circle</mat-icon> <!-- Icône utilisateur -->
+                                <i class="material-icons">account_circle</i> <!-- Icône utilisateur -->
                             </div>
                             <input type="text" [(ngModel)]="user.motdepasse" class="form-control" id="userId" name="userId"
                                 placeholder="Entrez votre identifiant" style="border-radius: 4px; padding: 10px;">
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="userpasswd" class="form-label" style="font-weight: bold;">Email</label>
+                        <label for="userpasswd" class="form-label" style="font-weight: bold;">Mot De Passe</label>
                         <div class="input-group">
                             <div class="input-group-text">
-                                <mat-icon>lock</mat-icon> <!-- Icône verrou -->
+                                <i class="material-icons">lock</i> <!-- Icône verrou -->
                             </div>
                             <input type="password" [(ngModel)]="user.email" class="form-control" id="userpasswd"
                                 name="password" placeholder="Entrez votre mot de passe" style="border-radius: 4px; padding: 10px;">
                         </div>
                         
-                        <a href="#" style="text-decoration: underline; color: #01644d; font-size: 14px; margin-bottom: 10px;padding-top: 100cm;" >
+                        <a href="#" style="text-decoration: underline; color: black; font-size: 14px; margin-bottom: 10px; display: block; text-align: right;">
                             Mot de passe oublié?
                         </a>
-                        <br>
                     </div>
                     <div style="text-align: center;">
-                     
-                        <button type="submit" class="btn white btn-primary" style="background-color: #c5d147">
-                            Connexion</button>
+                        <button type="submit" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Connexion</button>
+
                     </div>
                 </form>
             </div>

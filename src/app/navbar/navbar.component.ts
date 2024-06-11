@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { freeSet } from '@coreui/icons';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  icons = freeSet ;
 
 }

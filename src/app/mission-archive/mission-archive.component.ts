@@ -26,7 +26,7 @@ export class MissionArchiveComponent {
     
           this.employeeService.getAllMissions().subscribe(
             (data) => {
-              this.employees = data;
+              this.employees = data.filter(mission => mission.enCours === 0);
   
               const startIndex = (this.currentPage - 1) * this.employeesPerPage;
               const endIndex = startIndex + this.employeesPerPage;

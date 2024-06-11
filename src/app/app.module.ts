@@ -22,6 +22,9 @@ import { AxesComponent } from './axes/axes.component';
 import { QuestionComponent } from './question/question.component';
 import { SurveyModule } from "survey-angular-ui";
 import { CriteriaComponent } from './criteria/criteria.component';
+import { SurveyPdfComponent } from "./pdf/pdf.component";
+import { AvatarModule } from '@coreui/angular';
+import { IconModule, IconSetService } from '@coreui/icons-angular';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,7 @@ import { CriteriaComponent } from './criteria/criteria.component';
     AxesComponent,
     QuestionComponent,
     CriteriaComponent,
-    
+    SurveyPdfComponent
     
   ],
   imports: [
@@ -49,10 +52,11 @@ import { CriteriaComponent } from './criteria/criteria.component';
     MatGridListModule,
     MatToolbarModule,
     MatPaginatorModule,
-    SurveyModule
-
+    SurveyModule,
+    AvatarModule,
+    IconModule,
   ],
-  providers: [ MissionsService ],
+  providers: [ MissionsService,IconSetService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -135,7 +135,8 @@ export class AcceuilComponent {
 
       </div>
       <div class="btn-container">
-        <button type="submit" class="border-l-amber-300">Submit</button>
+      <button type="submit" class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Ajouter</button>
+
       </div>
     </form>
     </div>
@@ -161,7 +162,7 @@ export class AcceuilComponent {
             nom,
             dateDebut: new Date(dateDebut),
             dateFin: new Date(dateFin),
-            
+            enCours:1
           };
 
           this.submitForm(mission);
