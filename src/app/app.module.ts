@@ -25,7 +25,10 @@ import { CriteriaComponent } from './criteria/criteria.component';
 import { SurveyPdfComponent } from "./pdf/pdf.component";
 import { AvatarModule } from '@coreui/angular';
 import { IconModule, IconSetService } from '@coreui/icons-angular';
-
+import { 
+  DropdownModule,
+  SharedModule
+  } from '@coreui/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,8 +58,10 @@ import { IconModule, IconSetService } from '@coreui/icons-angular';
     SurveyModule,
     AvatarModule,
     IconModule,
+    DropdownModule,
+    SharedModule
   ],
-  providers: [ MissionsService,IconSetService ],
+  providers: [ MissionsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

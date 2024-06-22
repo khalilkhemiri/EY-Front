@@ -1,9 +1,6 @@
 {
   "name": "project-name",
   "version": "0.0.0",
-  "overrides": {
-    "survey-core": "1.11.1"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +19,7 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "@coreui/angular": "^5.1.2",
+    "@coreui/angular": "^5.2.0",
     "@coreui/icons": "^3.0.1",
     "@coreui/icons-angular": "^5.1.1",
     "@fortawesome/fontawesome-free": "^6.5.2",
@@ -31,7 +28,8 @@
     "date-fns": "^3.6.0",
     "material": "^0.9.11",
     "rxjs": "~7.8.0",
-    "survey-angular-ui": "^1.11.2",
+    "survey-angular-ui": "^1.10.6",
+    "survey-core": "^1.11.1",
     "survey-pdf": "^1.11.1",
     "sweetalert2": "^11.11.0",
     "tslib": "^2.3.0",

@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'acceuil', component: AcceuilComponent },
   { path: 'archive', component:  MissionArchiveComponent},
   { path: 'Axes', component: AxesComponent } ,
-  { path: 'question', component: QuestionComponent } ,
-  { path: 'criteria', component: CriteriaComponent } ,
+  { path: 'questions/:id', component: QuestionComponent } ,
+  { path: 'criteria/:id', component: CriteriaComponent } ,
   { path: 'eval', component: SurveyPdfComponent } 
 
 ];

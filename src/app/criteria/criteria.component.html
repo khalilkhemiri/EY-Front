@@ -1,11 +1,11 @@
 <app-navbar></app-navbar>
-<div class="container">   
-    <div class="card-container">
-      <div class="card" *ngFor="let carte of cartes">
-        <div class="card-content">
-          <h5 class="card-title text-2xl font-bold text-gray-900 mb-4">{{ carte.nom }}</h5>
-        </div>
+
+<div class="container">
+  <div class="card-container">
+    <div class="card" *ngFor="let carte of cartes" (click)="onCriteriaSelect(carte.id)">
+      <div class="card-content">
+        <h5 class="card-title text-2xl font-bold text-gray-900 mb-4">{{ carte.nom }}</h5>
       </div>
     </div>
   </div>
-  
+</div>
