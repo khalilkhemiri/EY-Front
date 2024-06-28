@@ -175,6 +175,8 @@ export class AcceuilComponent {
     this.missionService.createMission(mission).subscribe(response => {
       console.log('Mission créée:', mission);
       Swal.fire('Success', 'Mission créée avec succès', 'success');
+      this.router.navigate(['/Axes']);
+
     }, error => {
       console.error('Erreur lors de la création de la mission:', error);
       Swal.fire('Error', 'Une erreur est survenue lors de la création de la mission', 'error');

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AxesService } from '../service/axes.service';
 import { CriteriaService } from '../service/criteria.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-axes',
@@ -42,5 +43,45 @@ export class AxesComponent implements OnInit {
     if (!isNaN(domaineId)) {
       this.router.navigate(['/criteria', domaineId]);
     }
+  }
+  showForm(): void {
+    const htmlContent = `
+    <style>
+    
+    
+  </style>
+ <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">First and last name</span>
+  </div>
+  <input type="text" class="form-control">
+  <input type="text" class="form-control">
+</div>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">First and last name</span>
+  </div>
+  <input type="text" class="form-control">
+  <input type="text" class="form-control">
+</div>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="">First and last name</span>
+  </div>
+  <input type="text" class="form-control">
+  <input type="text" class="form-control">
+</div>
+  
+    `;
+  
+    Swal.fire({
+      html: htmlContent,
+      showCloseButton: true,
+      showConfirmButton: false,
+      customClass: {
+        popup: 'custom-popup-class'
+      },
+      
+    });
   }
 }

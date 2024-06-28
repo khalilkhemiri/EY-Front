@@ -11,11 +11,11 @@ import { PageEvent } from '@angular/material/paginator';
   styleUrl: './mission-archive.component.css'
 })
 export class MissionArchiveComponent {
-  displayedEmployees: Mission[] = []; // Ajoutez cette ligne pour déclarer la propriété displayedEmployees
+  displayedEmployees: Mission[] = []; 
 
   employees!: Mission[] ;
-  employeesPerPage = 5; // Nombre d'employés à afficher par page
-  currentPage = 1; // Page actuelle
+  employeesPerPage = 5; 
+  currentPage = 1; 
   constructor(private employeeService: MissionsService,private router: Router,private authService: AuthService) { }
 
   ngOnInit(): void {
